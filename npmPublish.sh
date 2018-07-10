@@ -6,7 +6,7 @@ PACKAGE_VERSION=$(cat package.json \
   | sed 's/[",]//g' \
   | tr -d '[[:space:]]')
 
-echo $PACKAGE_VERSION
+echo "Updating the version: $PACKAGE_VERSION"
 
 
 
@@ -30,6 +30,6 @@ increment_version ()
 
 NEW_PACKAGE_VERSION=$(increment_version $PACKAGE_VERSION)
 TAB=$'\t'
-sed -i '' -e "s/.*version.*/${TAB}\"version\": \"$hyperstateNewVer\",/g" ../package.json
-
+sed -i '' -e "s/.*version.*/\"version\": \"$NEW_PACKAGE_VERSION\",/g" ./package.json
+echo "publishing the new version $NEW_PACKAGE_VERSION"
 npm publish
