@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-cool",
-"version": "0.0.6",
+  "version": "0.0.7",
   "main": "index.js",
   "description": "A cool theme that has integrated some vue components, timetables and a timeline with markdown based diagrams plantuml and mermaid.",
   "repository": "https://github.com/FriendlyUser/vuepress-theme-cool",
