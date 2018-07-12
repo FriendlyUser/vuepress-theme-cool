@@ -254,4 +254,4 @@ Render the table by placing `<my-component />`in a markdown file.
  
 ### Disclaimer
 
-If you see any bugs feel free to make a pull request at Github or email me. Not a expert in vuepress at all or vue so there are ways to improve my implementations.
+If you see any bugs feel free to make a pull request at Github or email me. Not a expert in vuepress at all or vue so there are ways to improve my implementations. In addition, some of the components do not work, do not hesitate to message me.
