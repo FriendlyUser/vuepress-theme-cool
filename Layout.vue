@@ -22,6 +22,7 @@
 
 <script>
 import Vue from 'vue'
+import mermaid from 'mermaid'
 import nprogress from 'nprogress'
 import Home from './Home.vue'
 import Navbar from './Navbar.vue'
@@ -101,6 +102,9 @@ export default {
       nprogress.done()
       this.isSidebarOpen = false
     })
+    
+     mermaid.initialize({ startOnLoad: true })
+
   },
 
   methods: {

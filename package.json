@@ -1,8 +1,8 @@
 {
   "name": "vuepress-theme-cool",
-  "version": "0.0.7",
+	"version": "0.0.9",
   "main": "index.js",
-  "description": "A cool theme that has integrated some vue components, timetables and a timeline with markdown based diagrams plantuml and mermaid.",
+  "description": "A cool theme that has integrated some vue components, charts via charts, a timeline, and markdown based diagrams plantuml and mermaid.",
   "repository": "https://github.com/FriendlyUser/vuepress-theme-cool",
   "author": "FriendlyUser <pandabeareee@gmail.com>",
   "license": "MIT",
@@ -11,12 +11,12 @@
     "vuepress"
   ],
   "dependencies": {
+    "chart.js": "^2.7.2",
     "markdown-it-katex": "^2.0.3",
     "markdown-it-plantuml": "^1.1.0",
     "mermaid": "^8.0.0-rc.8",
-    "moment": "^2",
+    "vue-chartkick": "^0.4.0",
     "vue-cute-timeline": "^1.2.5",
-    "vue-moment": "^2",
     "vuex": "^3.0.1"
   }
 }
