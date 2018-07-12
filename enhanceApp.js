@@ -6,11 +6,14 @@ import ProgressBar from './progressbar.vue'
 import VueChartkick from 'vue-chartkick'
 import Chart from 'chart.js'
 
-
+import VueGoodTable from 'vue-good-table';
+// import the styles 
+import 'vue-good-table/dist/vue-good-table.css'
 export default ({ Vue, options, router, siteData }) => {
     Vue.use(Vuex)
     Vue.use(VueChartkick, {adapter: Chart})
     Vue.use(ProgressBar)
+    Vue.use(VueGoodTable)
     Vue.mixin({
         computed: {
             $title() {

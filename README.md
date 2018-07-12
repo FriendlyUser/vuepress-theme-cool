@@ -1,6 +1,6 @@
 # Personal Documentation Theme for VuePress
 
-This is the [VuePress](https://vuepress.vuejs.org/) theme used for my fourth year engineering courses.
+This is the [VuePress](https://vuepress.vuejs.org/) theme used for my fourth year engineering courses. It has libaries for markdown-based diagramming tools, sortable/filterable table components and chartjs.
 
 ## Setup
 
@@ -60,7 +60,7 @@ Also, make sure to include the scripts in package.json
 }
 ```
 
-or if you use `node_modules/vuepress/bin/vuepress`, instead of installing vuepress globally.
+or use `node_modules/vuepress/bin/vuepress` instead of installing vuepress globally.
 
 ### Creating Diagrams
 #### Plantuml
@@ -171,10 +171,9 @@ and render it in the markdown file using `<sample-timeline />`.
 
 #### Using math
 
-Katex can be created within a markdown file by 
-
+Katex can be created within a markdown file by, note that the necessary style sheet for `markdown-it-katex` is included in Layout.vue
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">`.
 ```md
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
 $x^2=4$
 ```
 
@@ -188,7 +187,71 @@ For example the snippet below generates a pie chart, see chartjs for more detail
 <pie-chart :data="[['Blueberry', 44], ['Strawberry', 23]]" :download="true" download="test"></pie-chart>
 ```
 
+#### Sortable and Filterable tables
 
+For sortable and filterable tables, I am using the [vue-good-table](https://xaksis.github.io/vue-good-table/guide/#installation) which has documentation in vuepress. In order to generate tables, use an vue component under `.vuepress/components`
+
+```js
+//.vuepress/components/my-component.vue
+<template>
+  <div>
+    <vue-good-table
+      :columns="columns"
+      :rows="rows"
+     />
+  </div>
+</template>
+
+<script>
+import { VueGoodTable } from 'vue-good-table';
+
+export default {
+  name: 'my-component',
+  // add to component
+  components: { VueGoodTable},
+  data(){
+    return {
+      columns: [
+        {
+          label: 'Name',
+          field: 'name',
+        },
+        {
+          label: 'Age',
+          field: 'age',
+          type: 'number',
+        },
+        {
+          label: 'Created On',
+          field: 'createdAt',
+          type: 'date',
+          dateInputFormat: 'YYYY-MM-DD',
+          dateOutputFormat: 'MMM Do YY',
+        },
+        {
+          label: 'Percent',
+          field: 'score',
+          type: 'percentage',
+        },
+      ],
+      rows: [
+        { id:1, name:"John", age: 20, createdAt: '201-10-31:9: 35 am',score: 0.03343 },
+        { id:2, name:"Jane", age: 24, createdAt: '2011-10-31', score: 0.03343 },
+        { id:3, name:"Susan", age: 16, createdAt: '2011-10-30', score: 0.03343 },
+        { id:4, name:"Chris", age: 55, createdAt: '2011-10-11', score: 0.03343 },
+        { id:5, name:"Dan", age: 40, createdAt: '2011-10-21', score: 0.03343 },
+        { id:6, name:"John", age: 20, createdAt: '2011-10-31', score: 0.03343 },
+      ],
+    };
+  },
+};
+</script>
+// optional styling
+<style src="vue-good-table/dist/vue-good-table.css"></style>
+```
+
+Render the table by placing `<my-component />`in a markdown file.
+ 
 ### Disclaimer
 
 If you see any bugs feel free to make a pull request at Github or email me. Not a expert in vuepress at all or vue so there are ways to improve my implementations.

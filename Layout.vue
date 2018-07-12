@@ -3,6 +3,7 @@
     :class="pageClasses"
     @touchstart="onTouchStart"
     @touchend="onTouchEnd">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
     <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
@@ -22,14 +23,12 @@
 
 <script>
 import Vue from 'vue'
-import mermaid from 'mermaid'
 import nprogress from 'nprogress'
 import Home from './Home.vue'
 import Navbar from './Navbar.vue'
 import Page from './Page.vue'
 import Sidebar from './Sidebar.vue'
 import { resolveSidebarItems } from './util'
-
 export default {
   components: { Home, Page, Sidebar, Navbar },
   data () {
@@ -102,9 +101,6 @@ export default {
       nprogress.done()
       this.isSidebarOpen = false
     })
-    
-     mermaid.initialize({ startOnLoad: true })
-
   },
 
   methods: {
@@ -132,6 +128,5 @@ export default {
   }
 }
 </script>
-
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="./styles/theme.styl" lang="stylus"></style>
