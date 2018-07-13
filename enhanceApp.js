@@ -2,7 +2,6 @@ import Vuex from 'vuex'
 //import './timetableStyles.css'
 //import timetable from 'vue-timetable'
 //Vue.use(timetable)
-import ProgressBar from './progressbar.vue'
 import VueChartkick from 'vue-chartkick'
 import Chart from 'chart.js'
 
