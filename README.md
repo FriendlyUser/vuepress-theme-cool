@@ -5,10 +5,10 @@ This is the [VuePress](https://vuepress.vuejs.org/) theme used for my fourth yea
 ## Setup
 
 1. [Install](https://vuepress.vuejs.org/guide/getting-started.html) VuePress like normal
-2. Require this theme
+2. Require this theme using the standard vuepress theme naming notation.
 
     ```js
-    yarn add -D vuepress-cooltheme
+    yarn add -D vuepress-theme-cool
     ```
 
 3. Set up `.vuepress/config.js`. A minimual setup is below, note that mermaid does not need to be included as a plugin.
