@@ -8,7 +8,7 @@ An Example repo is available at [Vuepress Theme Cool Starter](https://FriendlyUs
 ## Setup
 
 1. [Install](https://vuepress.vuejs.org/guide/getting-started.html) VuePress like normal
-2. Require this theme
+2. Require this theme using the standard vuepress theme naming notation.
 
     ```js
     yarn add -D vuepress-theme-cool
