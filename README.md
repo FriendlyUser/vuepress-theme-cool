@@ -251,6 +251,21 @@ export default {
 </script>
 ```
 
+In addition, use an custom style component to get the css classes for the production build.
+
+```vue
+//.vuepress/components/Styles.vue
+<script>
+import "vue-good-table/dist/vue-good-table.css";
+
+export default {
+  name: "Styles",
+};
+</script>
+
+<style>
+</style>
+```
 Render the table by placing `<my-component />`in a markdown file.
  
 ### Disclaimer
