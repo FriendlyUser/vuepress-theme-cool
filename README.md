@@ -1,14 +1,17 @@
-# Personal Documentation Theme for VuePress
+# Personal Documentation Theme for VuePress [![npm version](https://badge.fury.io/js/vuepress-theme-cool.svg)](https://badge.fury.io/js/vuepress-theme-cool)
 
 This is the [VuePress](https://vuepress.vuejs.org/) theme used for my fourth year engineering courses. It has libaries for markdown-based diagramming tools, sortable/filterable table components and chartjs.
 
+An Example repo is available at [Vuepress Theme Cool Starter](https://FriendlyUser.github/vuepress-theme-cool-starter)
+
+[Demo](http://friendlyuser.github.io/vuepress-theme-cool-starter)
 ## Setup
 
 1. [Install](https://vuepress.vuejs.org/guide/getting-started.html) VuePress like normal
 2. Require this theme
 
     ```js
-    yarn add -D vuepress-cooltheme
+    yarn add -D vuepress-theme-cool
     ```
 
 3. Set up `.vuepress/config.js`. A minimual setup is below, note that mermaid does not need to be included as a plugin.
@@ -246,8 +249,6 @@ export default {
   },
 };
 </script>
-// optional styling
-<style src="vue-good-table/dist/vue-good-table.css"></style>
 ```
 
 Render the table by placing `<my-component />`in a markdown file.

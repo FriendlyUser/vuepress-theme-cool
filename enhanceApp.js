@@ -11,7 +11,6 @@ import VueGoodTable from 'vue-good-table';
 export default ({ Vue, options, router, siteData }) => {
     Vue.use(Vuex)
     Vue.use(VueChartkick, {adapter: Chart})
-    Vue.use(ProgressBar)
     Vue.use(VueGoodTable)
     Vue.mixin({
         computed: {
