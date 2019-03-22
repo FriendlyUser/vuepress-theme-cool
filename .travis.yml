@@ -1,3 +1,7 @@
+language: node_js
+node_js:
+  - "10"
+
 deploy:
   provider: npm
   email: davidli012345@gmail.com
