@@ -1,0 +1,6 @@
+deploy:
+  provider: npm
+  email: davidli012345@gmail.com
+  api_key: $NPM_TOKEN
+  on:
+    tags: true

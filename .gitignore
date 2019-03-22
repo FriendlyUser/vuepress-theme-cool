@@ -3,4 +3,3 @@
 *.zip
 katex
 node_modules/
-travis.yml
