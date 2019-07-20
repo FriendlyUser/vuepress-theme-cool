@@ -3,6 +3,12 @@ language: node_js
 os:
   - linux
 
+node_js:
+    - "8"
+
+install:
+    - npm install
+
 deploy:
   provider: npm
   email: davidli012345@gmail.com
