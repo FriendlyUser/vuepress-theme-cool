@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: 'ProsCons',
+  name: 'pros-cons',
   props: {
     intro: {
       type: String,
