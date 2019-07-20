@@ -1,3 +1,8 @@
+language: node_js
+
+os:
+  - linux
+
 deploy:
   provider: npm
   email: davidli012345@gmail.com
