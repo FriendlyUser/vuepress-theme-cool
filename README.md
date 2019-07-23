@@ -16,6 +16,12 @@ An example repo is available at [Vuepress Theme Cool Starter](https://FriendlyUs
     yarn add -D vuepress-theme-cool
     ```
 
+    For the beta theme use (rest of document is out of date)
+
+    ```js
+    yarn install -D vuepress-theme-cool@1.0.3-beta
+    ```
+
 3. Set up `.vuepress/config.js`. A minimual setup is below, note that mermaid does not need to be included as a plugin.
     ```js
     // .vuepress/config.js
