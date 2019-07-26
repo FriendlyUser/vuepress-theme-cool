@@ -7,19 +7,63 @@ This is the [VuePress](https://vuepress.vuejs.org/) theme used for personal docu
 An example repo is available at [Vuepress Theme Cool Starter](https://FriendlyUser.github.io/vuepress-theme-cool-starter)
 
 [Demo](http://friendlyuser.github.io/vuepress-theme-cool-starter)
-## Setup
+
+## Setup For Vuepress V1
+
+ 1. The theme was refactored completely to inherit from the base vuepress theme.
+    Make sure to install the V1 for vuepress `yarn install --global vuepress@next`
+ 
+ 2. Get the beta version of the theme (soon to be non beta)
+    ```js
+    yarn install -D vuepress-theme-cool@1.0.3-beta
+    ```
+  
+  3. Set up `.vuepress/config.js`. A minimual setup is below, note that mermaid does not need to be included as a plugin.
+
+    ```js
+    // .vuepress/config.js
+    // this represents the minimal configuration
+    module.exports = {
+      theme: 'cool',
+      markdown: {
+        extendMarkdown: md => {
+          md.set({ html: true })
+          md.use(require('markdown-it-katex'))
+          md.use(require('markdown-it-plantuml'))
+          md.use(require('markdown-it-admonition'))
+        }
+      }
+    }
+    ```
+4. If you are adding vuepress to your local project, set up `package.json` and your file directory looks something like this
+
+```sh
+├ package.json
+├ docs
+├── .vuepress
+├──── components
+├──── public
+├──── config.js
+├──── index.styl
+├──── palette.styl
+├── Readme.md 
+├──Readme.md
+├── foo
+├──── README.md
+├──── doc1.md
+└── cool
+├──── doc2.md
+```
+
+If any issues arise, please review the documentation at https://v1.vuepress.vuejs.org/miscellaneous/migration-guide.html. The sample diagrams are components should work as it.
+
+## Setup For Vuepress V0
 
 1. [Install](https://vuepress.vuejs.org/guide/getting-started.html) VuePress like normal
 2. Require this theme using the standard vuepress theme naming notation.
 
     ```js
     yarn add -D vuepress-theme-cool
-    ```
-
-    For the beta theme use (rest of document is out of date)
-
-    ```js
-    yarn install -D vuepress-theme-cool@1.0.3-beta
     ```
 
 3. Set up `.vuepress/config.js`. A minimual setup is below, note that mermaid does not need to be included as a plugin.
