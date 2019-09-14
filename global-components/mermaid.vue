@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: 'mermaid',
   mounted() {
     import("mermaid/dist/mermaid").then(m => {
       m.initialize({
