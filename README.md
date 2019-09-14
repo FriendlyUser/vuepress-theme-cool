@@ -13,7 +13,7 @@ An example repo is available at [Vuepress Theme Cool Starter](https://FriendlyUs
  1. The theme was refactored completely to inherit from the base vuepress theme.
     Make sure to install the V1 for vuepress `yarn install --global vuepress@next`
  
- 2. Get the V1 supported version
+ 2. Get the latest version of the theme
     ```js
     yarn install -D vuepress-theme-cool
     ```
