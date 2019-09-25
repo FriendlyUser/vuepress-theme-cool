@@ -1,4 +1,5 @@
-# Personal Documentation Theme for VuePress [![npm version](https://badge.fury.io/js/vuepress-theme-cool.svg)](https://badge.fury.io/js/vuepress-theme-cool)
+ [![Build Status](https://travis-ci.com/FriendlyUser/vuepress-theme-cool.svg?branch=master)](https://travis-ci.com/FriendlyUser/vuepress-theme-cool) [![npm version](https://badge.fury.io/js/vuepress-theme-cool.svg)](https://badge.fury.io/js/vuepress-theme-cool) [![downloads](https://img.shields.io/npm/dm/vuepress-theme-cool.svg)](https://www.npmjs.com/package/vuepress-theme-cool) [![](https://img.shields.io/badge/Protected_by-Hound-a873d1.svg)](https://houndci.com)
+# Personal Documentation Theme for VuePress
 
 Currently, completely refactoring code for vuepress v1, all components should be compatible.
 
