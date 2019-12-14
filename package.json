@@ -11,13 +11,13 @@
     "vuepress"
   ],
   "dependencies": {
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.3",
     "markdown-it-admonition": "^1.0.4",
     "markdown-it-katex": "^2.0.3",
     "markdown-it-plantuml": "^1.4.1",
     "markdown-it-task-lists": "^2.1.1",
     "mermaid": "^8.4.3",
-    "vue-chartkick": "^0.5.2",
+    "vue-chartkick": "^0.6.0",
     "vue-cute-timeline": "^1.2.8",
     "vue-good-table": "^2.18.0",
     "vuex": "^3.1.1"
