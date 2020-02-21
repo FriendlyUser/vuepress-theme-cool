@@ -3,3 +3,4 @@
 *.zip
 katex
 node_modules/
+.npmrc
