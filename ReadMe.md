@@ -5,9 +5,9 @@ Currently, completely refactoring code for vuepress v1, all components should be
 
 This is the [VuePress](https://vuepress.vuejs.org/) theme used for personal documentation. It has libaries for markdown-based diagramming tools, sortable/filterable table components and chartjs.
 
-An example repo is available at [Vuepress Theme Cool Starter](https://FriendlyUser.github.io/vuepress-theme-cool-starter)
+An example repo is available at [Vuepress Theme Cool Starter](https://FriendlyUser.github.io)
 
-[Demo](http://friendlyuser.github.io/vuepress-theme-cool-starter)
+[Demo](http://friendlyuser.github.io)
 
 ## Setup For Vuepress V1
 
