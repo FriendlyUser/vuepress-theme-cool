@@ -12,11 +12,11 @@ An example repo is available at [Vuepress Theme Cool Starter](https://FriendlyUs
 ## Setup For Vuepress V1
 
  1. The theme was refactored completely to inherit from the base vuepress theme.
-    Make sure to install the V1 for vuepress `yarn install --global vuepress@next`
+    Make sure to install the V1 for vuepress `yarn global add vuepress@next`
  
  2. Get the latest version of the theme
     ```js
-    yarn install -D vuepress-theme-cool
+    yarn add -D vuepress-theme-cool
     ```
   
   3. Set up `.vuepress/config.js`. A minimual setup is below, note that mermaid does not need to be included as a plugin.
